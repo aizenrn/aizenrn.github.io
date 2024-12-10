@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Love for You</title>
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+            color: #fff;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        /* Floating Hearts */
+        .heart {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: rgba(255, 255, 255, 0.6);
+            opacity: 0.7;
+            border-radius: 50%;
+            animation: float 8s infinite ease-in-out;
+        }
+
+        .heart:nth-child(1) { top: 10%; left: 15%; animation-delay: 0s; }
+        .heart:nth-child(2) { top: 20%; left: 45%; animation-delay: 1s; }
+        .heart:nth-child(3) { top: 40%; left: 25%; animation-delay: 2s; }
+        .heart:nth-child(4) { top: 70%; left: 75%; animation-delay: 3s; }
+        .heart:nth-child(5) { top: 60%; left: 10%; animation-delay: 4s; }
+
+        @keyframes float {
+            0% { transform: scale(1) translateY(0); opacity: 1; }
+            50% { transform: scale(1.5) translateY(-50px); opacity: 0.6; }
+            100% { transform: scale(1) translateY(-100px); opacity: 0; }
+        }
+
+        header {
+            padding: 40px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .content {
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 350px;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background: #ff85a2;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background: #ff5c8a;
+            transform: scale(1.1);
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 15px;
+            font-size: 0.9em;
+            background: rgba(255, 255, 255, 0.1);
+            color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating Hearts -->
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+
+    <header>
+        <h1>To My Beloved</h1>
+        <p>You light up my world in the most magical way.</p>
+    </header>
+
+    <div class="content">
+        <div class="card">
+            <h2>Your Smile is My Happiness</h2>
+            <img src="bebi.jpg" height ="200" width ="300" alt="bebi">
+            
+            <p>Every time you smile, it feels like sunshine on a rainy day.</p>
+        </div>
+
+        <div class="card">
+            <h2>You Are My Universe</h2>
+            <p>Thank you for filling my life with love, laughter, and endless joy.</p>
+            <button onclick="alert('You’re my favorite person in the entire universe!')">Click Me!</button>
+        </div>
+
+        <div class="card">
+            <h2>Forever and Always</h2>
+            <img src="bab.jpg" height ="200" width ="300" alt="bab">
+            <p>Our love story is my favorite. Here’s to many more chapters together.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Made with infinite love, just for you. 💖</p>
+    </footer>
+</body>
+</html>
